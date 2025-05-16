@@ -5,4 +5,4 @@ This is the official codebase for the paper:
 
 The repository includes code for dataset usage, model evaluation, and benchmark protocols.
 
-👉 The corresponding dataset is available on [[PhyBlock_Benchmark](https://huggingface.co/datasets/PhyBlock/PhyBlock_Benchmark)] as an official release.
+👉 The corresponding dataset is available on [PhyBlock_Benchmark](https://huggingface.co/datasets/PhyBlock/PhyBlock_Benchmark) as an official release.
