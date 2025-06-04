@@ -1,0 +1,76 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "video_metadata": null,
+            "thought": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "```\nAnalysis of Main Target Image:\n\nThe structure consists of two separate stacks of blocks.\n\nStructure on the left:\n- Block Count: 6\n- Layers: 3\n- Spatial Relationships:  A yellow rectangular block (10) is at the bottom. An orange cylindrical block (13) is placed on top of it.  A red block with a hole (1) is on top of the orange cylinder, centered.  A yellow rectangular block (10) and a red block with a hole (1) are positioned on either side of the orange cylinder and the red block with a hole. Lastly, a triangular block (16) is positioned on top of the central structures.\n\n\nStructure on the right:\n- Block Count: 6\n- Layers: 3\n- Spatial Relationships: A green rectangular block (5) is at the base. An orange cylindrical block (13) sits on top of it. A yellow rectangular block (10) sits on top of the orange cylinder, and then a red triangular block (16) is on top of the yellow block. Finally a green block with a cutout (block index 5) sits on top of the triangular block.\n\nBlock Selection from Dictionary:\n\nStructure on the left:\n1. Block Index 10\n2. Block Index 13\n3. Block Index 1\n4. Block Index 10\n5. Block Index 1\n6. Block Index 16\n\nStructure on the right:\n1. Block Index 5\n2. Block Index 13\n3. Block Index 10\n4. Block Index 16\n5. Block Index 5\n\n\nAssembly Instructions:\n\n{\n  Step1: Move block with index 10 (yellow rectangle)\n  Step2: Move block with index 13 (orange cylinder) on top of block 10\n  Step3: Move block with index 1 (red with hole) on top of block 13, centered\n  Step4: Move block with index 10 (yellow rectangle) on the left side of block 1, adjacent to the orange cylinder\n  Step5: Move block with index 1 (red with hole) on the right side of block 1, adjacent to the orange cylinder\n  Step6: Move block with index 16 (red triangle) on top of block 1 (the centered block in middle)\n\n  Step7: Move block with index 5 (green rectangle)\n  Step8: Move block with index 13 (orange cylinder) on top of block 5\n  Step9: Move block with index 10 (yellow rectangle) on top of block 13\n  Step10: Move block with index 16 (red triangle) on top of block 10\n  Step11: Move block with index 5 (green rectangle) on top of block 16\n}\n```"
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "avg_logprobs": -0.2775754484663423,
+      "finish_reason": "STOP",
+      "grounding_metadata": null,
+      "index": null,
+      "logprobs_result": null,
+      "safety_ratings": [
+        {
+          "blocked": null,
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "probability": "NEGLIGIBLE",
+          "probability_score": null,
+          "severity": null,
+          "severity_score": null
+        },
+        {
+          "blocked": null,
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "probability": "NEGLIGIBLE",
+          "probability_score": null,
+          "severity": null,
+          "severity_score": null
+        },
+        {
+          "blocked": null,
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "probability": "NEGLIGIBLE",
+          "probability_score": null,
+          "severity": null,
+          "severity_score": null
+        },
+        {
+          "blocked": null,
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "probability": "NEGLIGIBLE",
+          "probability_score": null,
+          "severity": null,
+          "severity_score": null
+        }
+      ]
+    }
+  ],
+  "create_time": null,
+  "response_id": null,
+  "model_version": "gemini-1.5-flash-8b-001",
+  "prompt_feedback": null,
+  "usage_metadata": {
+    "cached_content_token_count": null,
+    "candidates_token_count": 623,
+    "prompt_token_count": 1062,
+    "total_token_count": 1685
+  },
+  "automatic_function_calling_history": [],
+  "parsed": null
+}
