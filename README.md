@@ -7,10 +7,7 @@ The repository includes code for dataset usage, model evaluation, and benchmark 
 
 👉 The corresponding dataset is available on [PhyBlock_Benchmark](https://huggingface.co/datasets/PhyBlock/PhyBlock_Benchmark) as an official release.
 
-
-Here's the revised and professional English version of your **"Evaluation Framework for Vision-Based Block Construction"** section in the `README.md`, suitable for a high-quality open-source GitHub repository:
-
-
+---
 
 ## 🏗️ Evaluation Framework for Vision-Based Block Construction
 
