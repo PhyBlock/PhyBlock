@@ -53,8 +53,6 @@ results_dir/
 
 
 
-当然可以！以下是一个符合开源社区美学、布局清晰、GitHub 渲染兼容的 **2 行 4 列 GIF 网格展示代码片段**，你可以将其粘贴到你的 `README.md` 中合适的位置：
-
 ---
 
 ## 🎞️ Model Predictions Visualization
