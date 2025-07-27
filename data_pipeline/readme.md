@@ -51,3 +51,63 @@ Each scene is categorized into one of four difficulty levels based on structural
 ### 🔹 4. Rendering via Simulation
 
 Using the [Genesis](https://genesis-embodied-ai.github.io/) simulation platform, we render each scene under six different background environments and camera viewpoints. The resulting multi-view images form the basis for our vision-language datasets and question-answering tasks.
+
+
+## 3️⃣ Scene Rendering Toolkit for Genesis
+
+This repository provides a script to render 3-view images (front, side, top) of 3D block-based scenes using the [Genesis Simulation Engine](https://genesis-embodied-ai.github.io/).
+
+### 🔹 Features
+
+- Load block scenes from JSON description
+- Support for multiple realistic background environments
+- Render and save 3 views as images
+- Automatically extract views from the recorded video
+
+### 🔹 Requirements
+
+- [Genesis](https://github.com/PKU-Alignment/Genesis)
+- Python 3.8+
+- OpenCV (`opencv-python`)
+- NumPy
+- SciPy
+
+Install required packages:
+
+```bash
+pip install opencv-python numpy scipy
+````
+
+
+
+### 🚀 Usage
+
+> ⚠️ Genesis must be properly installed and compiled with GPU support.
+
+```bash
+python utils/render_scene_views.py \
+    --scene_json_path /path/to/scene.json \
+    --assets_obj_dir /path/to/obj_dir \
+    --background_glb_dir /path/to/floor_dir \
+    --background_type ConcreteFloor \
+    --output_dir /path/to/output \
+    --show_viewer False
+```
+
+#### Arguments
+
+| Argument               | Description                                         |
+| ---------------------- | --------------------------------------------------- |
+| `--scene_json_path`    | Path to the JSON file describing the scene          |
+| `--assets_obj_dir`     | Directory containing block OBJ files                |
+| `--background_glb_dir` | Directory with background GLB files (e.g., floors)  |
+| `--background_type`    | Background type: `White`, `DarkCheckerboard`, etc.  |
+| `--output_dir`         | Directory to save the output video and images       |
+| `--show_viewer`        | (Optional) Show the Genesis viewer during rendering |
+
+#### Output
+
+The script generates:
+
+* A video: `<scene_name>.mp4`
+* Three images: `<scene_name>_0.png`, `<scene_name>_1.png`, `<scene_name>_2.png`
